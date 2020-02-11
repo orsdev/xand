@@ -47,6 +47,11 @@
       }
     }
 
+    .btn-light {
+      background: $white;
+      color: $dark-green;
+    }
+
     .btn-outline {
       background: transparent;
       border: 2px solid $white;
