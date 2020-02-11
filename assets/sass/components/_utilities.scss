@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.text-light {
+  color: $white;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -18,8 +22,16 @@
   color: $dark-green;
 }
 
+.margin-top-xs {
+  margin-top: 10px;
+}
+
 .margin-top-sm {
   margin-top: 20px;
+}
+
+.margin-top-md {
+  margin-top: 50px;
 }
 
 .margin-top-big {

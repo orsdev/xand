@@ -118,8 +118,21 @@
       padding-left: 10px;
       padding-right: 30px;
       width: 90%;
-      // position: relative;
       z-index: 2;
+    }
+
+    &-footer {
+      display: flex;
+
+      h3 {
+        font-weight: 700;
+      }
+
+      p {
+        color: grey;
+        font-size: 0.9rem;
+        width: calc(100% - 25px);
+      }
     }
 
     p {

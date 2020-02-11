@@ -1,0 +1,57 @@
+.feature {
+  padding: 90px 100px;
+  position: relative;
+
+  &__img {
+    width: 100%;
+    max-width: 90%;
+    height: 380px;
+    overflow: hidden;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    height: 250px;
+    max-width: 60%;
+    margin: auto;
+    justify-content: space-around;
+
+    &-card {
+      background: $dark-green;
+      padding: 50px;
+
+      .btn-light {
+        margin-left: -13px;
+      }
+
+      h2 {
+        letter-spacing: 3px;
+      }
+
+      p {
+        color: lighten($light-green, 5%);
+        opacity: 0.7;
+      }
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid $white;
+      position: relative;
+      top: 60px;
+    }
+  }
+}
