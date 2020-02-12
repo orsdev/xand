@@ -1,0 +1,19 @@
+.banner {
+  padding: 100px 50px;
+  background: darken($light-pink, 2%);
+
+  &__bg {
+    background: url(../../images/leaf.jpeg);
+    background: url(../images/leaf.jpeg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 25px;
+    letter-spacing: 1px;
+
+    p {
+      width: 90%;
+      text-transform: uppercase;
+    }
+  }
+}

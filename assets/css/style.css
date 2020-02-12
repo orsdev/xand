@@ -71,6 +71,10 @@
   background: #fad193;
 }
 
+.sub-heading {
+  font-size: 1.9rem;
+}
+
 .wavy {
   background: linear-gradient(45deg, #4d5811, #98ad22);
   background-size: 600% 100%;
@@ -479,6 +483,24 @@
   background: black;
 }
 
+.banner {
+  padding: 100px 50px;
+  background: #fff8ee;
+}
+.banner__bg {
+  background: url(../../images/leaf.jpeg);
+  background: url(../images/leaf.jpeg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 25px;
+  letter-spacing: 1px;
+}
+.banner__bg p {
+  width: 90%;
+  text-transform: uppercase;
+}
+
 @media (max-width: 1130px) {
   .feature {
     padding-left: 20px;
@@ -619,6 +641,15 @@
   .food-menu__nav li {
     display: inline-block;
     padding: 20px 2px;
+  }
+
+  .sub-heading {
+    font-size: 1.7rem;
+  }
+
+  .banner {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 @media (max-width: 270px) {
