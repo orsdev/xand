@@ -26,8 +26,12 @@
   margin-top: 10px;
 }
 
+.margin-bottom-sm {
+  margin-bottom: 20px !important;
+}
+
 .margin-top-sm {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
 .margin-top-md {
@@ -45,4 +49,24 @@
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.bg-orange-red {
+  background: $orange-red;
+}
+
+.bg-orange-light {
+  background: $light-orange;
+}
+
+.bg-orange-light-beta {
+  background: lighten($light-orange, 5%);
+}
+
+.bg-orange-dark {
+  background: $dark-orange;
+}
+
+.bg-creamy {
+  background: $creamy;
 }

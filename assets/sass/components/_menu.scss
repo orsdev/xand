@@ -1,0 +1,94 @@
+.food-menu {
+  position: relative;
+  display: grid;
+  grid-template-columns: 130px 1fr 2fr;
+  height: 534px;
+  overflow: hidden;
+  background: $light-pink;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li:not(:first-child) {
+      color: grey;
+    }
+  }
+
+  &__nav {
+    li {
+      padding: 44.5px 10px;
+
+      a {
+        text-decoration: none;
+        color: rgb(77, 74, 74);
+      }
+    }
+  }
+
+  &__img {
+    width: 400px;
+    img {
+      width: 100%;
+    }
+  }
+
+  hr {
+    border: 2px solid $light-orange;
+    width: 85%;
+  }
+
+  &__details {
+    padding-top: 30px;
+    padding-right: 10px;
+
+    &-header {
+      padding-left: 35px;
+    }
+
+    ul {
+      padding-left: 35px;
+    }
+
+    .first {
+      li:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+
+    .second {
+      li:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    .en {
+      color: lighten($light-green, 15%);
+      font-weight: 100;
+    }
+
+    .local {
+      color: $dark-green;
+    }
+  }
+
+  .third {
+    li {
+      display: inline-block;
+      background: grey;
+      width: 10px;
+      height: 10px;
+      padding: 2px 4px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+      &:first-child {
+        background: black;
+      }
+    }
+  }
+}
