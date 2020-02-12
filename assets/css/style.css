@@ -570,7 +570,7 @@
   background: #fff8ee;
 }
 .banner__bg {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/osdev/image/upload/v1581541389/xand/leaf_z7vomc.jpg");
   box-shadow: 0 2rem 3.5rem rgba(0, 0, 0, 0.2);
   background-position: top center;
   background-size: cover;
