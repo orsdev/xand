@@ -140,6 +140,21 @@
     grid-template-columns: repeat(auto-fit, minmax(170px, 205px)) !important;
   }
 
+  .wow {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
+
   .header__extra-info {
     grid-template-columns: 1fr;
 
