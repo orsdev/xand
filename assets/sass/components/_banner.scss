@@ -3,8 +3,18 @@
   background: darken($light-pink, 2%);
 
   &__bg {
-    background: url(../../images/leaf.jpeg);
-    background: url(../images/leaf.jpeg);
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.3),
+        rgba(2, 1, 1, 0.3)
+      ),
+      url(../assets/images/leaf.jpeg);
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../../assets/images/leaf.jpeg);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
