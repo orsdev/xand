@@ -895,7 +895,6 @@ textarea:focus {
 }
 @media (max-width: 800px) {
   .footer__body {
-    outline: 2px solid white;
     grid-template-columns: 1fr;
   }
 }
