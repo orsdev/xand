@@ -20,11 +20,15 @@
       max-width: 100%;
     }
   }
+
+  .header__extra-nav-bar {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 145px)) !important;
+  }
 }
 
 @media (max-width: 1000px) {
   .header__extra-nav-bar {
-    grid-template-columns: repeat(auto-fit, minmax(10%, 20%));
+    grid-template-columns: repeat(auto-fit, minmax(10%, 20%)) !important;
     padding: 0 10px;
     justify-content: center;
 
@@ -133,7 +137,7 @@
 
 @media (max-width: 640px) {
   .header__extra-nav-bar {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 205px));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 205px)) !important;
   }
 
   .header__extra-info {

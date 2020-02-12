@@ -276,7 +276,7 @@
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 145px));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 175px));
   justify-content: end;
   align-items: center;
   grid-gap: 5px;
@@ -419,7 +419,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 130px 1fr 2fr;
-  height: 534px;
+  height: 550px;
   overflow: hidden;
   background: #fffcf8;
 }
@@ -429,6 +429,9 @@
   list-style: none;
 }
 .food-menu ul li:not(:first-child) {
+  color: grey;
+}
+.food-menu ul li > span {
   color: grey;
 }
 .food-menu__nav li {
@@ -494,6 +497,7 @@
 .banner__bg {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(2, 1, 1, 0.3)), url(../assets/images/leaf.jpeg);
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/leaf.jpeg);
+  box-shadow: 0 2rem 3.5rem rgba(0, 0, 0, 0.2);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -598,6 +602,12 @@
   justify-content: space-between;
 }
 
+.infinity {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
 @media (max-width: 1130px) {
   .feature {
     padding-left: 20px;
@@ -617,10 +627,14 @@
     height: 100%;
     max-width: 100%;
   }
+
+  .header__extra-nav-bar {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 145px)) !important;
+  }
 }
 @media (max-width: 1000px) {
   .header__extra-nav-bar {
-    grid-template-columns: repeat(auto-fit, minmax(10%, 20%));
+    grid-template-columns: repeat(auto-fit, minmax(10%, 20%)) !important;
     padding: 0 10px;
     justify-content: center;
   }
@@ -705,7 +719,7 @@
 }
 @media (max-width: 640px) {
   .header__extra-nav-bar {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 205px));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 205px)) !important;
   }
 
   .header__extra-info {

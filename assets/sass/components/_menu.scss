@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 130px 1fr 2fr;
-  height: 534px;
+  height: 550px;
   overflow: hidden;
   background: $light-pink;
 
@@ -13,6 +13,12 @@
 
     li:not(:first-child) {
       color: grey;
+    }
+
+    li {
+      & > span {
+        color: grey;
+      }
     }
   }
 
