@@ -7,6 +7,8 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>XAND</title>
  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="assets/css/animate.css">
  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -27,10 +29,10 @@
     <li><a href="javascript:void(0)" class="contact text-center">Contact</a></li>
    </ul>
    <div class="header__extra-info">
-    <div class="header__extra-info-img">
-     <img src="assets/images/fruit-tray.png" alt="fruit-tray">
+    <div class="header__extra-info-img wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
+     <img src=" assets/images/fruit-tray.png" alt="fruit-tray">
     </div>
-    <div class="header__extra-info-body">
+    <div class="header__extra-info-body wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
      <p class="text-orange margin-top-big cursive">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nidh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adminim venlam, quis nostrud
@@ -138,7 +140,7 @@
 
  <!-- BANNER SECTION -->
  <section class="banner w-100">
-  <div class="banner__bg text-center">
+  <div class="banner__bg text-center wow slideInUp" data-wow-duration="2s">
    <h2 class="text-light sub-heading">This is a big sub heading for the Website</h2>
    <p class="margin-top-sm text-orange mx-auto">
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
@@ -189,6 +191,10 @@
    <img src="assets/images/infinity.png" alt="infinity">
   </div>
  </footer>
+ <script src="assets/js/wow.min.js"></script>
+ <script>
+  new WOW().init();
+ </script>
 </body>
 
 </html>
