@@ -683,6 +683,125 @@
   right: 20px;
 }
 
+.form-div {
+  position: fixed;
+  display: none;
+  top: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form-close {
+  height: 70px;
+  position: relative;
+}
+
+.close {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700px;
+  position: absolute;
+  top: 0;
+  right: 6px;
+  cursor: pointer;
+}
+.close:active {
+  font-size: 3.2rem;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  z-index: 20;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  border-radius: 7px;
+  background: #98ad22;
+}
+
+.form-group {
+  margin-bottom: 7px;
+}
+
+.feedback-input {
+  color: #3c3c3c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus {
+  background: transparent;
+  border-bottom: 3px solid #ffffff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+textarea {
+  padding: 13px 15px;
+  width: 100%;
+  max-width: 100%;
+}
+textarea:focus {
+  outline: none;
+}
+
+.button-blue {
+  display: inline-block;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #1f571a;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+.button-blue:active {
+  background-color: white;
+  color: #0493bd;
+}
+
+.button-blue:hover {
+  background-color: #266b20;
+}
+
+.show {
+  display: block;
+}
+
 @media (max-width: 1130px) {
   .feature {
     padding-left: 20px;
@@ -833,6 +952,11 @@
 @media (max-width: 520px) {
   .food-menu__details {
     grid-column: 1/-1;
+  }
+}
+@media (max-width: 450px) {
+  .form {
+    width: 95%;
   }
 }
 @media (max-width: 400px) {

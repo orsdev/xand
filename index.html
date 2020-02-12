@@ -186,17 +186,38 @@
     </div>
    </div>
   </div>
-
   <div class="message">
-   <small class="wobble-horizontal text-light">SEND A MESSAGE</small>
+   <small class="wobble-horizontal text-light" id="message">SEND A MESSAGE</small>
   </div>
-
   <div class="infinity">
    <img src="https://res.cloudinary.com/osdev/image/upload/v1581542245/xand/infinity_bjenxg.png" alt="infinity">
   </div>
  </footer>
+ <!-- FORM POPUP -->
+ <div class="form-div">
+  <form class="form" action="" method="post">
+   <div class="form-group form-close">
+    <span class="close">&times;</span>
+   </div>
+   <div class="form-group">
+    <input name="fullname" type="text" class="feedback-input err" placeholder="Full Name" id="fullname" required>
+   </div>
+   <div class="form-group">
+    <input name="email" type="email" class="feedback-input err" id="email" placeholder="Email" data-name="Email"
+     required>
+   </div>
+   <div class="form-group">
+    <textarea name="message-box" id="message-box" cols="30" rows="10" required placeholder="Your message..."></textarea>
+   </div>
+   <div class="submit text-center">
+    <button id="submitBtn" name="submit" type="submit" class="button-blue">SUBMIT</button>
+   </div>
+  </form>
+ </div>
  <script src="assets/js/wow.min.js"></script>
+ <script src="assets/js/popup.js"></script>
  <script>
+  //activate wow
   new WOW().init();
  </script>
 </body>
